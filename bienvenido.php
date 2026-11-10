@@ -6,6 +6,7 @@
     <title>Bienvenidos</title>
 </head>
 <body>
+    <img src="descarga(4).jpg" alt="">
     <h1>PHP-CONSTRUYE APP WEB</h1>
     <h4>Axel Vieyra Alcantar</h4>
     <h4>Página con varias ramas</h4>
