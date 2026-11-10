@@ -6,7 +6,7 @@
     <title>Bienvenidos</title>
 </head>
 <body>
-    <img src="descarga(4).jpg" alt="">
+    <img src="logo.webp" alt="">
     <h1>Bienvenido</h1>
     <h2>PHP-CONSTRUYE APP WEB</h2>
     <h4>Axel Vieyra Alcantar</h4>
