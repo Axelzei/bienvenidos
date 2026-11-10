@@ -7,10 +7,13 @@
 </head>
 <body>
     <img src="descarga(4).jpg" alt="">
-    <h1>PHP-CONSTRUYE APP WEB</h1>
+    <h1>Bienvenido</h1>
+    <h2>PHP-CONSTRUYE APP WEB</h2>
     <h4>Axel Vieyra Alcantar</h4>
     <h4>Página con varias ramas</h4>
     <h4>Fecha:09/11/2026</h4>
     <h4>Escuela: CBTis217</h4>
+
+    <a href="saludos.php">Saludos :D</a>
 </body>
 </html>
