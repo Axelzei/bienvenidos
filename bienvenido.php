@@ -1,3 +1,4 @@
+<!-- Este es el index donde va un  toda la información y un link al otro archivo y foto-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

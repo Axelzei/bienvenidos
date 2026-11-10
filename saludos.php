@@ -1,7 +1,11 @@
 <?php
+    // cuando se presione el boton
     if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['saludo'])){
+        //se mira cual es idioma para guardarlo
         $t_sa=strval($_POST['idioma']);
+        //se inicia una variable para guuardar el mensaje
         $men="";
+        //dependiendo del idioma se escoje el mensaje y se aguarda
         if($t_sa=="aleman"){
             $men="Hallo";
         }elseif($t_sa=="ruso"){
@@ -15,6 +19,7 @@
         }
     }
 ?>
+<!--Aqui esta el html donde esta el formulario para escojer el idioma y ya-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +40,7 @@
         </select>
         <button type="submit" name="saludo">Saludo</button>
     </form>
+    <!--Se muestra el mensaje cuando se aprieta el boon y hay un boton para regresar al inicio-->
     <?php
         if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['saludo'])){
         echo $men;
