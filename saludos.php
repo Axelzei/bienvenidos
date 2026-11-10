@@ -1,5 +1,5 @@
 <?php
-    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['calcular'])){
+    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['saludo'])){
         $t_sa=strval($_POST['idioma']);
         $men="";
         if($t_sa=="aleman"){
@@ -13,8 +13,6 @@
         }elseif($t_sa=="arabe"){
             $men="السلام عليكم";
         }
-        echo $men;
-        echo "<a href='bienvenido.php'>inicio</a>"
     }
 ?>
 <!DOCTYPE html>
@@ -25,9 +23,10 @@
     <title>Saludos</title>
 </head>
 <body>
-    <form metod="POST" action="">
+    <form method="POST" action="">
         <label for="eliga">Eliga un idioma</label>
-        <select name="idioma" id="idioma" requered>
+        <select name="idioma" id="idioma" required>
+            <option value=""></option>
             <option value="aleman">Aleman</option>
             <option value="ruso">Ruso</option>
             <option value="español">Español España</option>
@@ -36,5 +35,12 @@
         </select>
         <button type="submit" name="saludo">Saludo</button>
     </form>
+    <?php
+        if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['saludo'])){
+        echo $men;
+        echo "<br>";
+        }
+        echo "<a href='bienvenido.php'>inicio</a>";
+    ?>
 </body>
 </html>
